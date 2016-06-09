@@ -15,7 +15,6 @@ To install the library from source (recommended) run the following commands on a
 
 Here is a sample code which prints the current value of channel 0 and the difference between channel 0 and channel 1
 
-    import time
     import RPI_ADC0832
 
     # Create an ADC0832 instance
