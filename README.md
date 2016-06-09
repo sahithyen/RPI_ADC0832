@@ -28,9 +28,11 @@ Here is a sample code which prints the current value of channel 0 and the differ
     adc.diPin = 22 # Default pin: 24
 
     # Print the current value of channel 0
-    print('Value of channel 0: ' +  adc.read_adc(0))
+    valChannel0 = adc.read_adc(0)
+    print('Value of channel 0: ' +  str(valChannel0))
 
     # Print the difference of both channel. You have to give which channel has the bigger value
-    print('Difference: ' +  adc.read_adc(0))
+    valDifference = adc.read_adc_difference(0)
+    print('Difference: ' +  str(valDifference))
 
 You can use the digital input and output pin connected to the same GPIO pin.
